@@ -18,5 +18,12 @@ PerfilListarController.$inject = ["$rootScope", "$scope", "$location",
                 })
             }
 
+            vm.remover = function (id) {
+            HackatonStefaniniService.excluir(vm.url + id).then(
+                function (response) {
+                    vm.init();
+            })
+        }  
+
        
         }

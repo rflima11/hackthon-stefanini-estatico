@@ -48,4 +48,14 @@ function PerfilIncluirAlterarController(
 
 
         };
+
+    vm.remover = function (objeto, tipo) {
+
+       var url = vm.urlPerfil + objeto.id;
+        vm.excluir(url).then(
+            function (ojetoRetorno) {
+                vm.retornarTelaListagem();
+            });
+
+    };
     }

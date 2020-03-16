@@ -1,0 +1,175 @@
+[33mcommit 309f8dd0ddba7e098f35bd6eedf501db227ae30f[m[33m ([m[1;36mHEAD -> [m[1;32mhackaton[m[33m)[m
+Author: Rodolfo <rodolfo.lima.ferreira11@gmail.com>
+Date:   Sun Mar 15 22:15:01 2020 -0300
+
+    Adicionado funcionalidade de listar perfil
+
+[33mcommit e94677c7b38cc0ea03842e2aacd37d0c851461de[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Sat Mar 14 09:12:54 2020 -0300
+
+    projeto hackaton estatico
+
+[33mcommit 155bc4c9ebfae52ccf0e52c442947ce1b7e6839a[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Sat Mar 14 08:25:13 2020 -0300
+
+    projeto hackaton estatico
+
+[33mcommit d480ef5dd83f569c4aa691786a3eb2683d24d61b[m
+Author: EvertonMirand <everton.mirandav@gmail.com>
+Date:   Fri Mar 13 23:59:03 2020 -0300
+
+    correcoes tela
+
+[33mcommit e6ebe01581d2e084e8980b480ab2b23265ab6e1a[m
+Author: EvertonMirand <everton.mirandav@gmail.com>
+Date:   Fri Mar 13 22:50:41 2020 -0300
+
+    correcoes tela
+
+[33mcommit 940a5a65dd003f913ebaf6441afcdf8c3c28b6f4[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Fri Mar 13 21:33:33 2020 -0300
+
+    Thiago Leite - Implementando API
+
+[33mcommit 7e7accbae1a7b0cafaadc223629944993de71f48[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Fri Mar 13 18:18:01 2020 -0300
+
+    Thiago Leite - Implementando a tela home
+
+[33mcommit 06a8f0309fea272565d603602d55f2dc0af7447a[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Fri Mar 13 16:01:42 2020 -0300
+
+    Hudson Oliveira Sena - Subindo PPT para apresentação
+
+[33mcommit 5b94f57bbd907099664280c37e64edfe46be1f4a[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Fri Mar 13 15:56:38 2020 -0300
+
+    Thiago Leite - Implementando a tela home
+
+[33mcommit a884e95368957ac9dd48697c3f5a09bcaf102b10[m
+Author: ticoleite80 <61507910+ticoleite80@users.noreply.github.com>
+Date:   Fri Mar 13 08:46:56 2020 -0300
+
+    Update README.md
+
+[33mcommit f02f00c054fe0234c12034d59bd396244905a40a[m
+Author: EvertonMirand <everton.mirandav@gmail.com>
+Date:   Thu Mar 12 23:37:13 2020 -0300
+
+    correcoes tela
+
+[33mcommit 1633db15f5273d1368fac1c647481613624afc4a[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Thu Mar 12 17:02:51 2020 -0300
+
+    Hudson Oliveira Sena - Implementado cadastro pessoa(salva e altera) e implementado endereco(salva e edita - a partir de pessoa)
+
+[33mcommit 9168ddb8109553feeb2458abb58162d94b44f5a4[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Wed Mar 11 16:41:47 2020 -0300
+
+    Hudson Oliveira Sena - Implementando o perfil
+
+[33mcommit c903c8b763c90cfaa89e9557886102fbd2f2969a[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Wed Mar 11 14:16:04 2020 -0300
+
+    Thiago Leite - Implementando a tela home
+
+[33mcommit cb150fe9e75df01fcf5c150f827d88243bdc36a7[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Wed Mar 11 09:46:25 2020 -0300
+
+    Thiago Leite - Implementando a tela home
+
+[33mcommit 8f10a3df17c34fd2b87ec9d64d787e8b8ea8e9fe[m
+Author: ticoleite <ticoleite80@gmail.com>
+Date:   Wed Mar 11 09:18:43 2020 -0300
+
+    Thiago Leite - Implementando a tela home
+
+[33mcommit cd0de5b7747d027403f79b8fba46a32256772825[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Wed Mar 11 09:17:36 2020 -0300
+
+    Hudson Oliveira Sena - implementado o método delete
+
+[33mcommit 018e861abb1f31dff12fa8cda217d1555e515b25[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Tue Mar 10 18:56:41 2020 -0300
+
+    Hudson Oliveira Sena - Implementando funcoes de voltar e inicio do delete
+
+[33mcommit 6110d8b8cbeb6348305d9c9883f69eec22da9cb3[m
+Merge: 31f1e24 d5da6f4
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Tue Mar 10 17:55:47 2020 -0300
+
+    Merge branch 'master' of https://github.com/ticoleite80/hackaton-stefanini-estatico
+
+[33mcommit 31f1e24680823272544b93cc714fe4840d4dadb5[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Tue Mar 10 17:55:39 2020 -0300
+
+    Hudson Sena - Implementando o salvar e alterar pessoa
+
+[33mcommit d5da6f44f5b83eb21a04624ca1b727bac1ce7098[m
+Author: C1292960 <C1292960@interno.bb.com.br>
+Date:   Tue Mar 10 17:52:57 2020 -0300
+
+    Thiago Leite - Implementando a tela homem
+
+[33mcommit eda76bbca2d8c881f9ba6298ef566a5c91c11583[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Tue Mar 10 16:31:47 2020 -0300
+
+    Hudson - Projeto 30% concluido
+
+[33mcommit ab47d08e899796ffc800cd5510adae4b9d15c2db[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Mon Mar 9 19:22:23 2020 -0300
+
+    Hudson Sena - adicionando páginas, rotas e templates
+
+[33mcommit 90abf6f5258239a5ab83218b96ca4b34206ba485[m
+Merge: 796b883 0eb2002
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Mon Mar 9 19:21:17 2020 -0300
+
+    Merge branch 'master' of https://github.com/ticoleite80/hackaton-stefanini-estatico
+
+[33mcommit 796b883ec82a6c67a570d6f0de1f15d7f416ad56[m
+Author: C1294776 <C1294776@interno.bb.com.br>
+Date:   Mon Mar 9 19:21:12 2020 -0300
+
+    Hudson Sena - adicionando páginas, rotas e templates
+
+[33mcommit 0eb2002beb25c7d1fa8a24eb4dd99f2de254c16e[m
+Author: ticoleite80 <61507910+ticoleite80@users.noreply.github.com>
+Date:   Mon Mar 9 12:52:28 2020 -0300
+
+    Update README.md
+
+[33mcommit ce8567fe2327f80aba825d16c3201b643ed27181[m
+Author: C1292960 <C1292960@interno.bb.com.br>
+Date:   Mon Mar 9 12:51:02 2020 -0300
+
+    Projeto Inicial Hackaton Stefanini - README
+
+[33mcommit ead23be1284131a81284c0a173c15c136f7eefe4[m
+Author: C1292960 <C1292960@interno.bb.com.br>
+Date:   Mon Mar 9 12:35:07 2020 -0300
+
+    Projeto Inicial Hackaton Stefanini
+
+[33mcommit e7359a5b2fccb22e852167316ba76952bb4f390b[m
+Author: ticoleite80 <61507910+ticoleite80@users.noreply.github.com>
+Date:   Mon Mar 9 12:28:45 2020 -0300
+
+    Initial commit

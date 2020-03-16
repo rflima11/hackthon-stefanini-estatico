@@ -21,6 +21,9 @@
             .when('/cadastrarPessoa', {
                 templateUrl: 'app/spas/pessoas/template/pessoa-incluir-alterar.tpl.html',
                 controller: 'PessoaIncluirAlterarController as vm'
+            }).when('/listarPerfis', {
+                templateUrl: 'app/spas/perfil/template/perfil-listar.tpl.html',
+                controller: 'PerfilListarController as vm'
             })
             
             .otherwise({

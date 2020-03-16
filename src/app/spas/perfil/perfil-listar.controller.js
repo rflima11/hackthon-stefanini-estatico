@@ -17,4 +17,6 @@ PerfilListarController.$inject = ["$rootScope", "$scope", "$location",
                         vm.listaPerfil = responsePerfil.data;
                 })
             }
+
+       
         }

@@ -23,7 +23,14 @@ PerfilListarController.$inject = ["$rootScope", "$scope", "$location",
                 function (response) {
                     vm.init();
             })
-        }  
+        }
+        
+        vm.editar = function (id) {
+            if (id !== undefined)
+                $location.path("EditarPerfis/" + id);
+            else
+                $location.path("EditarPerfis");
+        }
 
        
         }

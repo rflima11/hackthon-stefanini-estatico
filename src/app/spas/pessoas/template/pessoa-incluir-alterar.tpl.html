@@ -167,9 +167,66 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
+          
           <button type="button" class="close" data-dismiss="modal">
-            &times;
+           &times;
           </button>
+          <div
+          class="container"
+          style="overflow-y: auto; overflow-x: hidden; height: 425px"
+        >
+          <form>
+            <div class="mx-auto" style="width: 200px;">
+              <h5 class="modal-title">Cadastro Endereço</h5>
+            </div>
+            <div class="form-group">
+              <label for="nomePessoa">CEP: </label>
+              <input
+                type="nome"
+                class="form-control"
+                id="cep"
+                ng-model="vm.pessoa.nome"
+                placeholder="Digite o nome da pessoa ..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="emailPessoa">UF:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="uf"
+                ng-model="vm.enderecoDefault.uf"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <label for="nascimentoPessoa" style="width: 250px;"
+                  >Data de nascimento</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nascimentoPessoa"
+                  ng-model="vm.pessoa.dataNascimento"
+                  ui-mask="99/99/9999"
+                  style="width: 120px;"
+                />
+              </div>
+              <div class="form-group">
+                <label for="nomePerfil">Perfil</label>
+                <div>
+                  <select
+                    style="width: 250px; height: 38px;"
+                    ng-class="{'disabledDiv': vm.listaPerfil.length === 0, 'custom-select custom-select-sm': true}"
+                    ng-options="item as item.nome for item in vm.listaPerfil track by item.id"
+                    ng-model="vm.perfil"
+                  >
+                    <option value="">-- PERFIL --</option>
+                  </select>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="modal-body">
           <div

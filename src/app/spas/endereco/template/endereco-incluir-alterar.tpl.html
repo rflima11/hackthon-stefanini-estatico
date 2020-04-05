@@ -1,0 +1,67 @@
+<div
+class="container"
+style="overflow-y: auto; overflow-x: hidden; height: 425px"
+>
+<form>
+    <div class="mx-auto text-center" style="width: 200px;">
+      <h5 class="modal-title">Endereço</h5>
+    </div>
+    <div class="form-group">
+      <label for="nomePessoa">CEP: </label>
+      <input
+        type="text"
+        class="form-control"
+        id="cep"
+        ng-model="vm.enderecoDefault.cep"
+        ng-click="vm.buscarCep()"
+        placeholder="Digite o seu cep..."
+      />
+    </div>
+    <div class="form-group">
+      <label for="uf">UF:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="uf"
+        ng-model="vm.enderecoDefault.uf"
+        placeholder="DF"
+      />
+    </div>
+      <div class="form-group">
+        <label for="cidade">Cidade</label>
+        <input
+          type="text"
+          class="form-control"
+          id="cidade"
+          ng-model="vm.enderecoDefault.localidade"
+        />
+      </div>
+      <div class="form-group">
+        <label for="bairro">Bairro:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="bairro"
+          ng-model="vm.enderecoDefault.bairro"
+        />
+      </div>
+      <div class="form-group">
+        <label for="logradouro">Logradouro:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="logradouro"
+          ng-model="vm.enderecoDefault.logradouro"
+        />
+      </div>
+      <div class="form-group">
+        <label for="complemento">Complemento:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="complemento"
+          ng-model="vm.enderecoDefault.complemento"
+        />
+      </div> 
+  </form>
+</div>

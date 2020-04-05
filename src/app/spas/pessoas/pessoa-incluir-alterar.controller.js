@@ -19,6 +19,7 @@ function PessoaIncluirAlterarController(
 
     /**ATRIBUTOS DA TELA */
     vm = this;
+    vm.isEdicao = false;
 
     vm.pessoa = {
         id: null,
@@ -40,9 +41,26 @@ function PessoaIncluirAlterarController(
         complemento: ""
     };
 
+
+
     vm.urlEndereco = "http://localhost:8080/treinamento/api/enderecos/";
     vm.urlPerfil = "http://localhost:8080/treinamento/api/perfils/";
     vm.urlPessoa = "http://localhost:8080/treinamento/api/pessoas/";
+
+
+    vm.buscarCep = function() {
+
+        HackatonStefaniniService.listar(vm.urlEndereco + vm.enderecoDefault.cep).then(
+            function(response){
+
+                vm.enderecoDefault.uf = response.data.uf;
+                vm.enderecoDefault.localidade = response.data.localidade;
+                vm.enderecoDefault.bairro = response.data.bairro;
+                vm.enderecoDefault.logradouro = response.data.logradouro;
+
+            }
+        )
+    }
 
     /**METODOS DE INICIALIZACAO */
     vm.init = function () {
@@ -104,8 +122,13 @@ function PessoaIncluirAlterarController(
     vm.incluir = function () {
         vm.pessoa.dataNascimento = vm.formataDataJava(vm.pessoa.dataNascimento);
 
+        
         var objetoDados = angular.copy(vm.pessoa);
         var listaEndereco = [];
+
+        vm.enviarFile();
+        objetoDados.base64Imagem = vm.base64Imagem;
+        
         angular.forEach(objetoDados.enderecos, function (value, key) {
             if (value.complemento.length > 0) {
                 value.idPessoa = objetoDados.id;
@@ -178,7 +201,27 @@ function PessoaIncluirAlterarController(
             }
         );
         return deferred.promise;
-    }
+    };
+
+    vm.salvarEndereco = function() {
+
+        var objetoDados = angular.copy(vm.enderecoDefault);
+        objetoDados = {
+            id: null,
+            idPessoa: vm.pessoa.id,
+            cep: vm.enderecoDefault.cep,
+            uf: vm.enderecoDefault.uf,
+            localidade: vm.enderecoDefault.localidade,
+            bairro: vm.enderecoDefault.bairro,
+            logradouro: vm.enderecoDefault.logradouro,
+            complemento: vm.enderecoDefault.complemento
+        }
+        vm.salvar(vm.urlEndereco, objetoDados).then(
+            function (enderecoRetorno) {
+                
+               console.log(enderecoRetorno);
+            });
+    };
 
     vm.salvar = function (url, objeto) {
 
@@ -220,6 +263,8 @@ function PessoaIncluirAlterarController(
         );
         return deferred.promise;
     }
+
+  
 
     /**METODOS AUXILIARES */
     vm.formataDataJava = function (data) {
@@ -268,4 +313,26 @@ function PessoaIncluirAlterarController(
         { "id": "DF", "desc": "DF" }
     ];
 
+
+    vm.enviarFile = function(){
+        vm.base64Imagem = angular.copy($("#base64Imagem").attr("src"));
+    };
+
+
+    vm.setarPreview = function () {
+        var preview = document.querySelectorAll('img').item(0);
+        var file = document.querySelector('input[type=file').files[0];
+        var reader = new FileReader();
+    
+        reader.onloadend = function () {
+            preview.src = reader.result; // Carrega a imagem em base64
+        };
+    
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.src = "";
+        }
+        vm.enviarFile();
+      }
 }
